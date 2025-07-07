@@ -1,0 +1,102 @@
+@import url('https://cdn.jsdelivr.net/gh/uhbee/uhbee-se_hyun/UhBeeSe_hyun.css');
+@import url('https://cdn.jsdelivr.net/gh/cafe24-oss/surround/webfonts/stylesheet.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body {
+  font-family: 'Pretendard', 'Noto Sans KR', '나눔스퀘어', Arial, sans-serif;
+  background: #f8fafc;
+  color: #222;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'UhBee Se_hyun', 'Cafe24Ssurround', 'Pretendard', 'Noto Sans KR', Arial, sans-serif;
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+#video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 40px;
+  min-height: 80px;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 6px 40px;
+  border: none;
+  border-radius: 40px;
+  background: #4fc3f7;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(80, 180, 255, 0.18);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+button img {
+  width: 56px;
+  height: 56px;
+  margin-right: 12px;
+}
+button:hover, button:active {
+  background: #039be5;
+  box-shadow: 0 6px 24px rgba(80, 180, 255, 0.28);
+}
+
+#bt_water {
+  background: #ffd54f !important; /* 비누버튼과 동일한 밝은 노랑 */
+  color: #333 !important;
+}
+#bt_soap {
+  background: #ffd54f !important; /* 밝은 노랑 */
+  color: #333 !important;
+}
+#bt_towel {
+  background: #ffd54f !important; /* 비누버튼과 동일한 밝은 노랑 */
+  color: #333 !important;
+}
+#bt_water img,
+#bt_towel img {
+  width: 84px;
+  height: 84px;
+  margin-right: 12px;
+}
+
+#bt_soap img {
+  width: 84px;
+  height: 84px;
+  margin-right: 12px;
+}
+
+@media (max-width: 700px) {
+  #main-video {
+    width: 100vw;
+    height: auto;
+  }
+  button {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+  }
+  #button-container {
+    gap: 16px;
+    min-height: 60px;
+  }
+}
